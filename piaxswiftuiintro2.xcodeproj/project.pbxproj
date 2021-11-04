@@ -12,6 +12,7 @@
 		ABA80E632733CC4900669237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA80E622733CC4900669237 /* Assets.xcassets */; };
 		ABA80E662733CC4900669237 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABA80E652733CC4900669237 /* Preview Assets.xcassets */; };
 		ABA80E6D2733CDBB00669237 /* ReadmoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA80E6C2733CDBB00669237 /* ReadmoreView.swift */; };
+		ABA80E6F2733E5A900669237 /* FancylistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA80E6E2733E5A900669237 /* FancylistView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		ABA80E622733CC4900669237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABA80E652733CC4900669237 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABA80E6C2733CDBB00669237 /* ReadmoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadmoreView.swift; sourceTree = "<group>"; };
+		ABA80E6E2733E5A900669237 /* FancylistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancylistView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				ABA80E5E2733CC4800669237 /* piaxswiftuiintro2App.swift */,
 				ABA80E602733CC4800669237 /* ContentView.swift */,
+				ABA80E6E2733E5A900669237 /* FancylistView.swift */,
 				ABA80E6C2733CDBB00669237 /* ReadmoreView.swift */,
 				ABA80E622733CC4900669237 /* Assets.xcassets */,
 				ABA80E642733CC4900669237 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				ABA80E6D2733CDBB00669237 /* ReadmoreView.swift in Sources */,
 				ABA80E612733CC4800669237 /* ContentView.swift in Sources */,
+				ABA80E6F2733E5A900669237 /* FancylistView.swift in Sources */,
 				ABA80E5F2733CC4800669237 /* piaxswiftuiintro2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
