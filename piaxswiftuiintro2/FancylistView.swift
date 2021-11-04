@@ -14,35 +14,41 @@ struct FancylistView: View {
     @State var nametextfield = ""
     
     var body: some View {
-        VStack {
-            HStack {
-                TextField("Namn", text: $nametextfield)
-                    .padding(.leading, 50.0)
-                Button(action: {
-                    names.append(nametextfield)
-                    nametextfield = ""
-                }) {
-                    Text("Lägg till")
-                }
-            }
-            .padding(.horizontal)
-            List {
-                ForEach(names, id: \.self) { bananskal in
-                    
+        
+        NavigationView {
+            VStack {
+                HStack {
+                    TextField("Namn", text: $nametextfield)
+                        .padding(.leading, 50.0)
                     Button(action: {
-                        print("KLCIKAT KNAPP " + bananskal)
+                        names.append(nametextfield)
+                        nametextfield = ""
                     }) {
-                        HStack {
-                            Text(bananskal)
-                            Spacer()
-                            Text("Gillar Kakor")
-                        }
+                        Text("Lägg till")
                     }
-                    
-                    
+                }
+                .padding(.horizontal)
+                List {
+                    ForEach(names, id: \.self) { bananskal in
+                        
+                        NavigationLink(destination: ReadmoreView(thename: bananskal)) {
+                            HStack {
+                                Text(bananskal)
+                                Spacer()
+                                Text("Gillar Kakor")
+                            }
+                        }
+                        
+                        
+                        
+                        
+                        
+                    }
                 }
             }
         }
+        
+        
     }
 }
 

@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ReadmoreView: View {
     
-    @Environment(\.dismiss) var dismiss
+    @Environment(\.dismiss) private var dismiss
     
+    @State var thename = "TEST"
     
     var body: some View {
         VStack {
-            Text("Mer text och info här")
+            Text(thename)
             
             
             Button(action: {
@@ -30,6 +31,6 @@ struct ReadmoreView: View {
 
 struct ReadmoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ReadmoreView()
+        ReadmoreView(thename: "TESTVÄRDE")
     }
 }
